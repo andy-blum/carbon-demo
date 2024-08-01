@@ -6,7 +6,7 @@ const cwc = "https://1.www.s81c.com/common/carbon/web-components/version";
 
 (async () => {
   const cibm_pkg = await fetch('https://registry.npmjs.org/@carbon/ibmdotcom-web-components').then(r => r.json());
-  const cibm_version = cibm_pkg["dist-tags"].latest;
+  const cibm_version = cibm_pkg["dist-tags"]["v1-latest"];
 
   const cibm_components = await glob('./node_modules/@carbon/ibmdotcom-web-components/es/components/*/index.js');
   const cibm_imports = cibm_components
@@ -16,7 +16,7 @@ const cwc = "https://1.www.s81c.com/common/carbon/web-components/version";
 
 
   const cwc_pkg = await fetch('https://registry.npmjs.org/@carbon/web-components').then(r => r.json());
-  const cwc_version = cwc_pkg["dist-tags"].latest;
+  const cwc_version = cwc_pkg["dist-tags"]["v1-latest"];
 
   const cwc_components = await glob('./node_modules/@carbon/web-components/es/components/*/index.js');
   const cwc_imports = cwc_components

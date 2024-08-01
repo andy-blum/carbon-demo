@@ -1,4 +1,9 @@
-@use '@carbon/styles/scss/reset';
-@use '@carbon/styles/scss/type';
+@import 'carbon-components/scss/globals/grid/grid';
 
-@include type.default-type;
+body:has(dds-masthead-container) > .bx--grid {
+  padding-top: 49px;
+}
+
+body:has(dds-masthead-l1) > .bx--grid {
+  padding-top: 98px;
+}
