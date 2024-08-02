@@ -1,4 +1,5 @@
 @import 'carbon-components/scss/globals/grid/grid';
+@import 'carbon-components/scss/components/list/list';
 
 body:has(dds-masthead-container) > .bx--grid {
   padding-top: 49px;
@@ -6,4 +7,43 @@ body:has(dds-masthead-container) > .bx--grid {
 
 body:has(dds-masthead-l1) > .bx--grid {
   padding-top: 98px;
+}
+
+dds-background-media {
+  img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+dds-leadspace-heading.colorized {
+  background: linear-gradient(to right, #a56eff, #3880ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+dds-content-block-heading {
+  max-width: none;
+}
+
+dds-cta-block-item-row {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+  fill: url('#svg-grad')
+}
+
+dds-content-block-heading.colorized, span[slot="statistics"] {
+  display: inline-block;
+  font-weight: normal;
+  height: auto;
+  margin-bottom: 2rem;
+
+  background: linear-gradient(to bottom, #8a3ffc, #0f62fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

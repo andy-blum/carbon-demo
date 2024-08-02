@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carbon Design System Demo</title>
+  <title>Capstone - Cinemagraph Leadspace</title>
   <link rel="icon" href="https://www.ibm.com/content/dam/adobe-cms/default-images/favicon.svg"/>
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css" />
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/cssgrid.css" />
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/themes.css" />
   <link rel="stylesheet" href="main.scss">
   <script src="/components.js" type="module"></script>
+
 </head>
 <body>
   <dds-masthead-container auth-method="cookie" has-contact="false"></dds-masthead-container>
-  <div class="bx--grid">
+  <div class="bx--grid dds-theme-zone-g100">
     <div class="bx--row">
       <div class="bx--col">
-        <h1>Project Capstone</h1>
-      </div>
-    </div>
-    <div class="bx--row">
-      <div class="bx--col">
-        <ul class="bx--list--unordered">
-          <li class="bx--list__item">
-            <a href="/cinemagraph.html">Cinemagraph Leadspace</a>
-          </li>
-          <li class="bx--list__item">
-            <a href="/colorized-leadspace.html">Colorized Leadspace</a>
-          </li>
-          <li class="bx--list__item">
-            <a href="/statistics.html">Colorized Statistics</a>
-          </li>
-          <li class="bx--list__item">
-            <a href="/pictograms.html">Colorized Pictograms</a>
-          </li>
-        </ul>
+        <dds-leadspace type="left" size="medium" gradient-style-scheme="">
+
+          <dds-leadspace-heading slot="heading">IBM Guardium Insights</dds-leadspace-heading>
+
+          Get improved data security, compliance workflows, and visibility for data spread across cloud environments
+
+          <dds-button-group slot="action">
+            <dds-button-cta kind="primary" aria- cta-type="local">See why Gaurdium ranked as a leader</dds-button-cta>
+            <dds-button-cta kind="tertiary" aria- cta-type="local">Book a live demo</dds-button-cta>
+          </dds-button-group>
+
+          <dds-background-media slot="image">
+            <video loop autoplay>
+              <source src="https://assets.codepen.io/2478247/guardium-leadspace-test1b%281%29.mp4">
+              </source>
+            </video>
+          </dds-background-media>
+
+        </dds-leadspace>
       </div>
     </div>
   </div>
