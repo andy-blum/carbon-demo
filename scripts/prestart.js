@@ -1,5 +1,5 @@
-import { glob } from 'glob'
-import { writeFile } from "fs/promises";
+const { glob } = require('glob');
+const { writeFile } = require('fs/promises');
 
 const cibm = "https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version";
 const cwc = "https://1.www.s81c.com/common/carbon/web-components/version";
