@@ -34,16 +34,25 @@ dds-cta-block-item-row {
 svg {
   width: 80px;
   height: 80px;
-  fill: url('#svg-grad')
 }
 
-dds-content-block-heading.colorized, span[slot="statistics"] {
+svg.colorized {
+  fill: var(--colorized-background)
+}
+
+span[slot="statistics"] {
   display: inline-block;
   font-weight: normal;
   height: auto;
   margin-bottom: 2rem;
+}
 
-  background: linear-gradient(to bottom, #8a3ffc, #0f62fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+span[slot="statistics"].gradient {
+  background: var(--colorized-background);
+  background-clip: text;
+  color: transparent;
+}
+
+span[slot="statistics"].solid {
+  color: var(--colorized-background);
 }
