@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Design System Demo</title>
+  <link rel="icon" href="https://www.ibm.com/content/dam/adobe-cms/default-images/favicon.svg"/>
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/cssgrid.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/themes.css" />
+  <link rel="stylesheet" href="main.scss">
+  <link rel="stylesheet" href="tabs.scss">
+  <script src="/components.js" type="module"></script>
+  <script src="/tabs.js"></script>
+</head>
+<body>
+  <dds-masthead-container auth-method="cookie" has-contact="false"></dds-masthead-container>
+  <div class="bx--grid">
+    <div class="bx--row">
+      <div class="bx--col-lg-4">
+        <h1>Use Cases</h1><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, at dolor autem illo sed cupiditate distinctio cum deserunt corrupti recusandae eligendi, officia vero harum est! Dignissimos deserunt laudantium eius excepturi, repellat sequi dolore animi quidem eligendi in nisi dicta error?</p><br>
+      </div>
+      <div class="bx--col-lg-12">
+        <bx-tabs trigger-content="Select an item" value="tab-1">
+          <bx-tab id="tab-1" target="panel-1" value="tab-1" selected>Data security and protection</bx-tab>
+          <bx-tab id="tab-2" target="panel-2" value="tab-2">Data Compliance</bx-tab>
+          <bx-tab id="tab-3" target="panel-3" value="tab-3">Data security posture management</bx-tab>
+        </bx-tabs>
+        <div class="tab-panels spotlight">
+          <div id="panel-1" role="tabpanel" aria-labelledby="tab-1" data-color="#0f62fe" data-shape="42% 58% 18% 82% / 51% 82% 18% 49%">
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Data security and protection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur voluptatem consequuntur, doloribus ex doloremque dolorum tenetur rem culpa modi? Illo ullam doloremque quos harum.</p>
+                <dds-cta cta-type="local" cta-style="text">Learn more</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden data-color="#08bdba" data-shape="27% 73% 31% 69% / 72% 22% 78% 28%">
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Data Compliance</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat, exercitationem temporibus, iusto perspiciatis odit, ducimus officiis porro dolorum tenetur voluptatum harum sit ea ipsa fugit minus.</p>
+                <dds-cta cta-type="local" cta-style="text">Learn more</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden data-color="#a56eff" data-shape="69% 31% 45% 55% / 27% 22% 78% 73%">
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Data security posture management</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores eos suscipit nobis? Cupiditate ad nobis repudiandae perferendis nisi tenetur eum nulla?</p>
+                <dds-cta cta-type="local" cta-style="text">Learn more</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-background">
+            <div class="tab-content"></div>
+            <div class="tab-media"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basic DDO from homepage -->
+  <script type="text/javascript">
+    window.digitalData = JSON.parse(`{"page":{"category":{"primaryCategory":""},"pageInfo":{"language":"en-us","ibm":{"siteID":"CarbonDemo","country":"us","messaging":{"routing":{"focusArea":"Cross IBM - All","languageCode":"en","regionCode":"us"},"translation":{"languageCode":"en","regionCode":"us"}},"sections":0,"patterns":0}}}}`);
+  </script>
+</body>
+</html>

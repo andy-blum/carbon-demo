@@ -12,7 +12,8 @@ export default defineConfig({
         leadspace: fileURLToPath(new URL('./colorized-leadspace.html', import.meta.url)),
         statistics: fileURLToPath(new URL('./statistics.html', import.meta.url)),
         pictograms: fileURLToPath(new URL('./pictograms.html', import.meta.url)),
-        tabs: fileURLToPath(new URL('./tabs.html', import.meta.url))
+        tabs: fileURLToPath(new URL('./tabs.html', import.meta.url)),
+        tabs: fileURLToPath(new URL('./tabs-2.html', import.meta.url))
       },
     },
   },
