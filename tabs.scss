@@ -1,0 +1,64 @@
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/grid/scss/_mixins.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/colors/scss/mixins';
+
+.tab-wrapper {
+  @include carbon--make-row;
+
+  padding-block: 2rem;
+}
+
+.tab-content {
+  @include carbon--make-col-ready;
+  @include carbon--make-col(4, 16);
+
+  h2, p {
+    margin-bottom: 1rem;
+  }
+}
+
+.tab-media {
+  @include carbon--make-col-ready;
+  @include carbon--make-col(12, 16);
+  $transparency: dd;
+
+  [role="tabpanel"]:nth-child(1) & {
+    --outer: #{$ibm-color__blue-50}#{$transparency};
+    --inner: #{$ibm-color__purple-50}#{$transparency};
+  }
+  [role="tabpanel"]:nth-child(2) & {
+    --outer: #{$ibm-color__red-30}#{$transparency};
+    --inner: #{$ibm-color__magenta-40}#{$transparency};
+  }
+  [role="tabpanel"]:nth-child(3) & {
+    --outer: #{$ibm-color__cyan-50}#{$transparency};
+    --inner: #{$ibm-color__green-30}#{$transparency};
+  }
+  [role="tabpanel"]:nth-child(4) & {
+    --outer: #{$ibm-color__green-50}#{$transparency};
+    --inner: #{$ibm-color__teal-50}#{$transparency};
+  }
+  [role="tabpanel"]:nth-child(5) & {
+    --outer: #{$ibm-color__red-30}#{$transparency};
+    --inner: #{$ibm-color__red-40}#{$transparency};
+  }
+  [role="tabpanel"]:nth-child(6) & {
+    --outer: #{$ibm-color__purple-50}#{$transparency};
+    --inner: #{$ibm-color__blue-40}#{$transparency};
+  }
+
+  aspect-ratio: 1.77;
+
+  background-image:
+    linear-gradient(to bottom,  white 0%,  transparent 50%),
+    radial-gradient(circle at 50% 100%, transparent 0%,  white 80%),
+    linear-gradient(to right,  var(--outer), var(--inner), var(--outer));
+
+  background-clip: content-box;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Design System Demo</title>
+  <link rel="icon" href="https://www.ibm.com/content/dam/adobe-cms/default-images/favicon.svg"/>
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/cssgrid.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/themes.css" />
+  <link rel="stylesheet" href="main.scss">
+  <link rel="stylesheet" href="tabs.scss">
+  <script src="/components.js" type="module"></script>
+</head>
+<body>
+  <dds-masthead-container auth-method="cookie" has-contact="false"></dds-masthead-container>
+  <div class="bx--grid">
+    <div class="bx--row">
+      <div class="bx--col">
+        <bx-tabs trigger-content="Select an item" value="tab-1">
+          <bx-tab id="tab-1" target="panel-1" value="tab-1" selected>Orchestration</bx-tab>
+          <bx-tab id="tab-2" target="panel-2" value="tab-2">Single sign-on</bx-tab>
+          <bx-tab id="tab-3" target="panel-3" value="tab-3">Advanced Authentication</bx-tab>
+          <bx-tab id="tab-4" target="panel-4" value="tab-4">Adaptive access</bx-tab>
+          <bx-tab id="tab-5" target="panel-5" value="tab-5">Consent management</bx-tab>
+          <bx-tab id="tab-6" target="panel-6" value="tab-6">Lifecycle management</bx-tab>
+        </bx-tabs>
+        <div class="tab-panels">
+          <div id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Orchestration</h2>
+                <p>Build frictionless and secure end user experiences by integrating your existing identity tools with no-code experiences and drag-and-drop visual flows.</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Orchestration</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Single sign-on</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus possimus accusantium voluptatibus veritatis eos repudiandae laudantium, facilis voluptate laboriosam. Animi, hic. Explicabo, dolores officia.</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Single sign-on</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Advanced Authentication</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores eos suscipit nobis? Cupiditate ad nobis repudiandae perferendis nisi tenetur eum nulla?</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Advanced Authentication</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Adaptive access</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ut ipsa debitis placeat quo minus, mollitia atque? Ipsa, reiciendis laboriosam!</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Adaptive access</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-5" role="tabpanel" aria-labelledby="tab-5" hidden>
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Consent management</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur deleniti quas autem nostrum quaerat, enim omnis nemo doloremque. Iure rem sequi sint dicta, facilis veniam?</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Consent management</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="panel-6" role="tabpanel" aria-labelledby="tab-6" hidden>
+            <div class="tab-wrapper">
+              <div class="tab-content">
+                <h2>Lifecycle management</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quia rem eum aliquam impedit, amet mollitia natus deserunt possimus cupiditate tempore tenetur neque nostrum?</p>
+                <dds-cta cta-type="local" cta-style="text">Explore Lifecycle management</dds-cta>
+              </div>
+              <div class="tab-media">
+                <img src="/images/verify-single-sign-on.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basic DDO from homepage -->
+  <script type="text/javascript">
+    window.digitalData = JSON.parse(`{"page":{"category":{"primaryCategory":""},"pageInfo":{"language":"en-us","ibm":{"siteID":"CarbonDemo","country":"us","messaging":{"routing":{"focusArea":"Cross IBM - All","languageCode":"en","regionCode":"us"},"translation":{"languageCode":"en","regionCode":"us"}},"sections":0,"patterns":0}}}}`);
+  </script>
+</body>
+</html>
