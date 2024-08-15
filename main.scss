@@ -1,5 +1,6 @@
 @import 'carbon-components/scss/globals/grid/grid';
 @import 'carbon-components/scss/components/list/list';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/colors/scss/mixins';
 
 body:has(dds-masthead-container) > .bx--grid {
   padding-top: 49px;
@@ -31,13 +32,13 @@ dds-cta-block-item-row {
   grid-template-columns: repeat(4, 1fr);
 }
 
-svg {
+dds-cta-block-item svg {
   width: 80px;
   height: 80px;
-}
 
-svg.colorized {
-  fill: var(--colorized-background)
+  &.colorized {
+    fill: var(--colorized-background)
+  }
 }
 
 span[slot="statistics"] {
@@ -55,4 +56,25 @@ span[slot="statistics"].gradient {
 
 span[slot="statistics"].solid {
   color: var(--colorized-background);
+}
+
+.fc-styles {
+  aspect-ratio: 1;
+  width: 50%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: $ibm-color__purple-40;
+  background-image: url('/images/fe8b90c802f6f017a217ad20050acef5c2153ea5-bw.png');
+  background-blend-mode: multiply;
+  transition: background 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  h1 {
+    color: white;
+    font-size: 5rem;
+  }
+
+  &:hover {
+    background-color: $ibm-color__purple-50;
+    cursor: pointer;
+  }
 }
