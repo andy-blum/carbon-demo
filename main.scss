@@ -70,6 +70,10 @@ body:has(dds-masthead-l1) > .bx--grid {
       color: $text-01;
     }
 
+    &-price:has(+ &-rate) {
+      padding-bottom: 0;
+    }
+
     &-amount {
       @include carbon--type-style('expressive-heading-06');
     }
