@@ -12,18 +12,26 @@ body:has(dds-masthead-l1) > .bx--grid {
   padding-top: 98px;
 }
 
+.pricing-table-wrapper {
+  container-type: inline-size;
+  container-name: pricing-table;
+}
+
 .pricing-table {
   display: grid;
   gap: 0 $spacing-07;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(var(--sm-cols, 4), 1fr);
   margin: $spacing-05 0;
 
   @include carbon--breakpoint('md') {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(var(--md-cols, 8), 1fr);
   }
 
   @include carbon--breakpoint('lg') {
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--lg-cols, 16), 1fr);
+  }
+
+  @container pricing-table (min-width: 700px) {
   }
 }
 
@@ -116,7 +124,16 @@ body:has(dds-masthead-l1) > .bx--grid {
   }
 
   &--feature {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-05;
     padding-bottom: $spacing-05;
+
+    svg {
+      flex: 0 0 1lh;
+      width: 1lh;
+      height: 1lh;
+    }
   }
 
   &--cta {
