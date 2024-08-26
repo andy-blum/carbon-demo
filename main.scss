@@ -23,6 +23,10 @@ body:has(dds-masthead-l1) > .bx--grid {
   grid-template-columns: repeat(var(--sm-cols, 4), 1fr);
   margin: $spacing-05 0;
 
+  @include carbon--breakpoint('sm') {
+    grid-template-columns: repeat(var(--sm-cols, 4), 1fr);
+  }
+
   @include carbon--breakpoint('md') {
     grid-template-columns: repeat(var(--md-cols, 8), 1fr);
   }
@@ -31,7 +35,18 @@ body:has(dds-masthead-l1) > .bx--grid {
     grid-template-columns: repeat(var(--lg-cols, 16), 1fr);
   }
 
-  @container pricing-table (min-width: 700px) {
+  @include carbon--breakpoint('xlg') {
+    grid-template-columns: repeat(var(--xlg-cols, 16), 1fr);
+  }
+
+  @include carbon--breakpoint('max') {
+    grid-template-columns: repeat(var(--max-cols, 16), 1fr);
+  }
+
+  &-headline {
+    @include carbon--type-style('productive-heading-06');
+    color: text-01;
+    margin-block: $spacing-07;
   }
 }
 
@@ -46,6 +61,10 @@ body:has(dds-masthead-l1) > .bx--grid {
 
   @include carbon--breakpoint('md') {
     margin-left: calc(-1 * #{$spacing-05});
+  }
+
+  @include carbon--breakpoint('xlg') {
+    grid-column: span 3;
   }
 
   &--flag {
