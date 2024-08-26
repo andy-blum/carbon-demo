@@ -1,7 +1,8 @@
-@import 'carbon-components/scss/globals/scss/spacing';
 @import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/layout';
 @import 'carbon-components/scss/globals/scss/theme-tokens';
-
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/spacing';
 
 body:has(dds-masthead-container) > .bx--grid {
   padding-top: 49px;
@@ -14,23 +15,37 @@ body:has(dds-masthead-l1) > .bx--grid {
 .pricing-table {
   display: grid;
   gap: 0 $spacing-07;
-  grid-template-rows: repeat(calc(7 + var(--list-length)), auto);
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: $spacing-05 0;
+
+  @include carbon--breakpoint('md') {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include carbon--breakpoint('lg') {
+    grid-template-columns: repeat(16, 1fr);
+  }
 }
 
 .pricing-table-item {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: subgrid;
-  grid-row: 1 / -1;
+  grid-row: span calc(8 + var(--list-length));
   grid-column: span 4;
-  margin-left: calc(-1 * #{$spacing-05});
+  margin-bottom: $spacing-09;
+  background-color: $ui-background;
+
+  @include carbon--breakpoint('md') {
+    margin-left: calc(-1 * #{$spacing-05});
+  }
 
   &--flag {
-    background-color: $blue-60;
-    color: $white-0;
-    padding: $spacing-03 $spacing-05;
+    @include carbon--type-style('body-long-02');
+
+    background-color: $blue-70;
+    color: $text-04;
+    padding: 0 $spacing-05;
     grid-row: 1 / 2;
   }
 
@@ -38,22 +53,79 @@ body:has(dds-masthead-l1) > .bx--grid {
     grid-row: 2 / span 5;
     display: grid;
     grid-template-rows: subgrid;
-    gap: $spacing-05 0;
-    background-color: $purple-30;
-    padding: $spacing-05;
+    background-color: $blue-20;
+    padding: $spacing-05 $spacing-05 $spacing-03;
+    color: $text-01;
+
+    & > *  {
+      padding-bottom: $spacing-05;
+    }
+
+    &-edition {
+      @include carbon--type-style('body-short-02');
+    }
+
+    &-descriptor {
+      @include carbon--type-style('body-short-02');
+      color: $text-01;
+    }
+
+    &-amount {
+      @include carbon--type-style('expressive-heading-06');
+    }
+
+    &-currency {
+      @include carbon--type-style('expressive-heading-03');
+    }
+
+    &-rate {
+      @include carbon--type-style('productive-heading-01');
+    }
+
+    &-detail {
+      @include carbon--type-style('body-short-01');
+    }
   }
 
   &:nth-child(2) &--header {
-    background-color: $teal-20;
+    background-color: $purple-20;
+  }
+
+  &:nth-child(3) &--header {
+    background-color: $teal-10;
+  }
+
+  &:nth-child(4) &--header {
+    background-color: $magenta-20;
   }
 
   &--features-list {
-    padding: $spacing-05;
+    padding: $spacing-06 $spacing-05 $spacing-03;
     border: 1px solid $ui-03;
     border-top: none;
+    border-bottom: none;
     grid-row: span var(--list-length);
     display: grid;
     grid-template-rows: subgrid;
-    gap: $spacing-05 0;
+    color: $text-02;
+    @include carbon--type-style('body-short-01');
+  }
+
+  &--feature {
+    padding-bottom: $spacing-05;
+  }
+
+  &--cta {
+    padding: 0 $spacing-05 $spacing-03;
+    border: 1px solid $ui-03;
+    border-top: none;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    dds-cta {
+      padding-bottom: $spacing-06;
+    }
   }
 }
