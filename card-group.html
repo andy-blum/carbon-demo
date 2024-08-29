@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Design System Demo</title>
+  <link rel="icon" href="https://www.ibm.com/content/dam/adobe-cms/default-images/favicon.svg"/>
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/latest/plex.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/cssgrid.css" />
+  <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
+  <link rel="stylesheet" href="main.scss">
+  <script src="/components.js" type="module"></script>
+
+</head>
+<body>
+  <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
+  <div class="cds--css-grid">
+    <div class="cds--col-span-75 cds--css-grid-column cds--col-start-5">
+      <h2>Recommended Markup</h2>
+      <c4d-card-group grid-mode="border" style="margin-block: 2rem;">
+        <c4d-card-group-item href="https://example.com" color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/597"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-card-footer cta-type="local" href="https://example.com">Link text</c4d-card-footer>
+        </c4d-card-group-item>
+        <c4d-card-group-item href="https://example.com" color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/598"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-card-footer cta-type="local" href="https://example.com">Link text</c4d-card-footer>
+        </c4d-card-group-item>
+        <c4d-card-group-item href="https://example.com" color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/599"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-card-footer cta-type="local" href="https://example.com">Link text</c4d-card-footer>
+        </c4d-card-group-item>
+      </c4d-card-group>
+
+      <h2>AEM-customized Markup</h2>
+      <c4d-card-group grid-mode="border" style="margin-block: 2rem;">
+
+        <c4d-card-group-item color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/600"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-text-cta cta-type="local" href="https://example.com">Link text</c4d-text-cta>
+        </c4d-card-group-item>
+
+        <c4d-card-group-item color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/601"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-text-cta cta-type="local" href="https://example.com">Link text</c4d-text-cta>
+        </c4d-card-group-item>
+
+        <c4d-card-group-item color-scheme="light" cta-type="local">
+          <c4d-image slot="image" default-src="https://picsum.photos/602"></c4d-image>
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Heading</c4d-card-heading>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+
+          <div>
+            <cds-tag type="green">Tag 1</cds-tag>
+            <cds-tag type="purple">Tag 2</cds-tag>
+            <cds-tag type="red">Tag 3</cds-tag>
+          </div>
+
+          <c4d-text-cta cta-type="local" href="https://example.com">Link text</c4d-text-cta>
+        </c4d-card-group-item>
+
+    </c4d-card-group>
+    </div>
+  </div>
+
+  <!-- Basic DDO from homepage -->
+  <script type="text/javascript">
+    window.digitalData = JSON.parse(`{"page":{"category":{"primaryCategory":""},"pageInfo":{"language":"en-us","ibm":{"siteID":"CarbonDemo","country":"us","messaging":{"routing":{"focusArea":"Cross IBM - All","languageCode":"en","regionCode":"us"},"translation":{"languageCode":"en","regionCode":"us"}},"sections":0,"patterns":0}}}}`);
+  </script>
+</body>
+</html>
