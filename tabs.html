@@ -10,24 +10,52 @@
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
   <link rel="stylesheet" href="main.scss">
   <script src="/components.js" type="module"></script>
-
 </head>
 <body>
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
   <div class="cds--css-grid">
     <div class="cds--col-span-100 cds--css-grid-column">
-      <h1>Clientlib Problems</h1>
-      <ul>
-        <li>
-          <a href="/card-group.html">Card Group</a>
-        </li>
-        <li>
-          <a href="/video-cta.html">Video CTAs</a>
-        </li>
-        <li>
-          <a href="/tabs.html">Tabs</a>
-        </li>
-      </ul>
+      <h1>Tabs</h1>
+
+<c4d-tabs-extended-media value="first">
+  <c4d-tab id="tab-first" target="panel-first" value="first">
+    Tab 1
+  </c4d-tab>
+  <c4d-tab id="tab-second" target="panel-second" value="second">
+    Tab 2
+  </c4d-tab>
+  <c4d-tab id="tab-third" target="panel-third" value="third">
+    Tab 3
+  </c4d-tab>
+  <c4d-tab id="tab-fourth" target="panel-fourth" value="fourth">
+    Tab 4
+  </c4d-tab>
+</c4d-tabs-extended-media>
+<div>
+  <div id="panel-first" role="tabpanel" aria-labelledby="tab-first" hidden>
+    Panel 1
+  </div>
+  <div id="panel-second" role="tabpanel" aria-labelledby="tab-second" hidden>
+    Panel 2
+  </div>
+  <div id="panel-third" role="tabpanel" aria-labelledby="tab-third" hidden>
+    Panel 3
+  </div>
+  <div id="panel-fourth" role="tabpanel" aria-labelledby="tab-fourth" hidden>
+    Panel 4
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 
