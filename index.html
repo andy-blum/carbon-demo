@@ -10,15 +10,76 @@
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
   <link rel="stylesheet" href="main.scss">
   <script src="/components.js" type="module"></script>
-
 </head>
 <body>
+
+  <template id="card"><c4d-card
+    cta-type="local"
+    href="https://example.com">
+    <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+    <c4d-card-heading>Card Title</c4d-card-heading>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <c4d-card-footer></c4d-card-footer>
+  </c4d-card></template>
+
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
   <div class="cds--css-grid">
     <div class="cds--col-span-100 cds--css-grid-column">
       <h1>Demo Page</h1>
+
+      <section class="carousel">
+        <div class="carousel-window">
+          <div class="carousel-items" id="items" tabindex="0">
+            <!-- ITEMS HERE -->
+          </div>
+        </div>
+        <nav>
+          <button id="prev">
+            <svg viewBox="0 0 32 32">
+              <polygon points="10,16 20,6 21.4,7.4 12.8,16 21.4,24.6 20,26 "/>
+            </svg>
+          </button>
+          <button id="next">
+            <svg viewBox="0 0 32 32">
+              <polygon points="22,16 12,26 10.6,24.6 19.2,16 10.6,7.4 12,6 "/>
+            </svg>
+          </button>
+        </nav>
+      </section>
     </div>
   </div>
+
+
+
+
+  <script>
+    // Add cards into carousel
+    const template = window.card.content.firstElementChild;
+    for (let i = 0; i < 10; i++) {
+      const card = template.cloneNode(true);
+
+      card.querySelector('c4d-card-heading').innerText = `Card #${i+1}`
+
+      window.items.insertAdjacentElement(
+        'beforeend',
+        card
+      );
+    }
+
+    // Wire up nav buttons
+    const items = document.querySelector('#items')
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', ({currentTarget}) => {
+        if (currentTarget.id === 'prev') {
+          items.scrollLeft = items.scrollLeft - items.offsetWidth
+        }
+
+        if (currentTarget.id === 'next') {
+          items.scrollLeft = items.scrollLeft + items.offsetWidth
+        }
+      })
+    })
+  </script>
 
   <!-- Basic DDO from homepage -->
   <script type="text/javascript">
