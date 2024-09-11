@@ -21,6 +21,10 @@
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     & > * {
       width: calc(100% - 1rem);
       flex-shrink: 0;
