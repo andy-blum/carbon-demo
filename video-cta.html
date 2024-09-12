@@ -11,14 +11,21 @@
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/cssgrid.css" />
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
   <link rel="stylesheet" href="main.scss">
-  <script src="/components.js" type="module"></script>
 
+  <script type="module" src="https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/masthead.min.js"></script>
+  <script type="module" src="https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/card.min.js"></script>
+  <script type="module" src="https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/card-group.min.js"></script>
+  <script type="module" src="https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/tag-group.min.js"></script>
+  <script type="module" src="https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/cta.min.js"></script>
 </head>
 <body>
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
 
   <c4d-video-cta-container>
     <div class="cds--css-grid">
+      <div class="cds--col-span-100">
+        <h1>Deferring the video-cta-container 10s</h1>
+      </div>
       <div class="cds--col-span-25 cds--css-grid-column">
         <c4d-card
           cta-type="video"
@@ -78,6 +85,12 @@
   <!-- Basic DDO from homepage -->
   <script type="text/javascript">
     window.digitalData = JSON.parse(`{"page":{"isDataLayerReady":true,"category":{"primaryCategory":""},"pageInfo":{"language":"en-us","ibm":{"siteID":"CarbonDemo","country":"us","messaging":{"routing":{"focusArea":"Cross IBM - All","languageCode":"en","regionCode":"us"},"translation":{"languageCode":"en","regionCode":"us"}},"sections":0,"patterns":0}}}}`);
+  </script>
+
+  <script defer>
+    setTimeout(() => {
+      import('https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12018/video-cta-container.min.js')
+    }, 10000)
   </script>
 </body>
 </html>

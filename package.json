@@ -5,9 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prestart": "node scripts/prestart.js",
     "start": "vite",
-    "build": "node scripts/prestart.js && vite build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
