@@ -1,7 +1,8 @@
 // vite.config.js
-import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 import find from 'find';
+import { resolve } from 'path';
+import handlebars from 'vite-plugin-handlebars';
 
 const htmlFiles = find.fileSync('./')
   .filter(file => (
@@ -12,7 +13,11 @@ const htmlFiles = find.fileSync('./')
 
 
 export default defineConfig({
-  plugins: [],
+  plugins: [
+    handlebars({
+      partialDirectory: resolve(__dirname, 'components'),
+    }),
+  ],
   build: {
     rollupOptions: {
       input: htmlFiles,

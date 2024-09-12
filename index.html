@@ -14,11 +14,23 @@
 </head>
 <body>
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
-  <div class="cds--css-grid">
-    <div class="cds--col-span-100 cds--css-grid-column">
-      <h1>Demo Page</h1>
+  <div class="toc-container cds--css-grid bx--grid">
+    <div class="cds--col-span-100">
+      {{> leadspace }}
+      <c4d-table-of-contents>
+        <div class="cds--subgrid" style="--cds-grid-columns: 12">
+          <main class="cds--css-grid-column cds--col-span-8">
+            {{> main }}
+          </main>
+          <aside class="cds--css-grid-column cds--col-span-4">
+            {{> aside }}
+          </aside>
+        </div>
+      </c4d-table-of-contents>
     </div>
   </div>
+  {{> next-steps }}
+  <c4d-footer-container></c4d-footer-container>
 
   <!-- Basic DDO from homepage -->
   <script type="text/javascript">

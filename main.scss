@@ -1,4 +1,63 @@
 @use '@carbon/styles/scss/reset';
+@use '@carbon/styles/scss/themes';
+@use '@carbon/styles/scss/theme' with (
+  $theme: themes.$white
+);
 @use '@carbon/styles/scss/type';
 
 @include type.default-type;
+@include type.type-classes;
+
+
+
+c4d-leadspace {
+  width: 100%;
+  position: static;
+  margin: 0;
+}
+
+c4d-table-of-contents {
+  margin-inline: -1.5rem;
+  margin-block-end: 2rem;
+}
+
+main, aside {
+  margin-block-start: 3rem;
+}
+
+main {
+  :is(h2, h3, h4, h5) {
+    @include type.type-style('productive-heading-06');
+    margin-block: 1.5rem;
+
+    &:first-child {
+      margin-block-start: 0;
+    }
+  }
+
+  :is(p, ul, ol) {
+    margin-block: 1rem;
+  }
+}
+
+aside c4d-card {
+  margin-block: 1rem;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.next-steps {
+  @include theme.theme(themes.$g10);
+
+  background-color: theme.$layer-02;
+}
+
+c4d-cta-block::part(content-layout) {
+  padding: 0;
+}
