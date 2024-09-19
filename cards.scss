@@ -1,0 +1,40 @@
+@use '@carbon/styles/scss/motion';
+
+c4d-card[pictogram-placement="bottom"] {
+  &::part(content) {
+    position: relative;
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+
+  &::part(copy) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, -16px, 0);
+    transition: all motion.$duration-moderate-02 motion.motion(standard, productive);
+    margin-top: 0;
+  }
+
+  [slot="heading"] {
+    opacity: 1;
+    transform: translateZ(0px);
+    transition: motion.$duration-moderate-02 motion.motion(standard, productive);
+    position: absolute;
+    top: 0;
+  }
+
+  &:is(:hover, :focus-within) {
+    &::part(copy) {
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition-delay: 0.2s;
+    }
+
+    [slot="heading"] {
+      opacity: 0;
+      transform: translate3d(0px, 16px, 0px);
+      transition-delay: 0s;
+    }
+  }
+}
