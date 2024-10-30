@@ -1,7 +1,7 @@
 import { glob } from "glob";
 import { writeFile } from "fs/promises"
 
-const cibm = "https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version";
+const cibm = "https://ibmdotcom-cdn.s3.us-east.cloud-object-storage.appdomain.cloud/deploy-previews/12084";
 const cwc = "https://1.www.s81c.com/common/carbon/web-components/version";
 
 (async () => {
@@ -11,7 +11,7 @@ const cwc = "https://1.www.s81c.com/common/carbon/web-components/version";
   const cibm_components = await glob('./node_modules/@carbon/ibmdotcom-web-components/es/components/*/index.js');
   const cibm_imports = cibm_components
     .map(path => path.split('/').at(-2))
-    .map(cmp => `import "${cibm}/v${cibm_version}/${cmp}.min.js";`)
+    .map(cmp => `import "${cibm}/${cmp}.min.js";`)
     .join('\n');
 
 
