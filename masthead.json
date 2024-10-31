@@ -1,0 +1,344 @@
+[
+  {
+    "title": "AI",
+    "titleEnglish": "AI",
+    "url": "",
+    "submenu": {
+      "highlights": [
+        {
+          "heading": {
+            "title": "AI",
+            "titleEnglish": "AI"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "groups": [
+            {
+              "links": [
+                {
+                  "title": "Overview",
+                  "titleEnglish": "Overview",
+                  "url": "https://example.com",
+                  "description": "Fugiat elit commodo commodo adipisicing labore id tempor non do ut"
+                },
+                {
+                  "title": "AI assistants",
+                  "titleEnglish": "AI assistants",
+                  "url": "https://example.com",
+                  "description": "Velit tempor et Lorem reprehenderit ad"
+                },
+                {
+                  "title": "Models",
+                  "titleEnglish": "Models",
+                  "url": "https://example.com",
+                  "description": "Proident non officia enim aliqua cupidatat pariatur magna"
+                },
+                {
+                  "title": "AI and data platforms",
+                  "titleEnglish": "AI and data platforms",
+                  "url": "https://example.com",
+                  "description": "Ad dolor et ex excepteur consequat excepteur"
+                },
+                {
+                  "title": "Data Services",
+                  "titleEnglish": "Data Services",
+                  "url": "https://example.com",
+                  "description": "Proident ea do ea et aute ipsum ex irure adipisicing elit cillum in ullamco"
+                },
+                {
+                  "title": "Consulting",
+                  "titleEnglish": "Consulting",
+                  "url": "https://example.com",
+                  "description": "Est esse laborum reprehenderit sint"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Hybrid Cloud",
+    "titleEnglish": "Hybrid Cloud",
+    "url": "",
+    "submenu": {
+      "highlights": [
+        {
+          "heading": {
+            "title": "Hybrid Cloud",
+            "titleEnglish": "Hybrid Cloud"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "groups": [
+            {
+              "links": [
+                {
+                  "title": "Overview",
+                  "titleEnglish": "Overview",
+                  "url": "https://example.com",
+                  "description": "Exercitation eu fugiat nulla ut mollit"
+                },
+                {
+                  "title": "Cloud Platform",
+                  "titleEnglish": "Cloud Platform",
+                  "url": "https://example.com",
+                  "description": "Irure occaecat pariatur proident cupidatat"
+                },
+                {
+                  "title": "Insights",
+                  "titleEnglish": "Insights",
+                  "url": "https://example.com",
+                  "description": "Ullamco id consectetur sunt anim veniam sunt exercitation commodo velit laborum consectetur do"
+                },
+                {
+                  "title": "Transformation",
+                  "titleEnglish": "Transformation",
+                  "url": "https://example.com",
+                  "description": "Ad culpa tempor amet culpa deserunt mollit consectetur id eu proident aliqua excepteur ad cillum"
+                },
+                {
+                  "title": "Consulting",
+                  "titleEnglish": "Consulting",
+                  "url": "https://example.com",
+                  "description": "Et pariatur voluptate consequat nisi est nostrud consectetur irure officia velit"
+                },
+                {
+                  "title": "Consulting",
+                  "titleEnglish": "",
+                  "url": "https://example.com",
+                  "description": "Aliquip occaecat dolore ex consectetur ipsum cupidatat esse in aute commodo mollit consequat"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Products",
+    "titleEnglish": "Products",
+    "submenu": {
+      "highlights": [
+        {
+          "heading": {
+            "title": "Products",
+            "titleEnglish": "Products",
+            "description": "Ut ullamco amet nostrud ipsum commodo mollit quis do in proident sint occaecat deserunt"
+          },
+          "links": [
+            {
+              "title": "Featured Products",
+              "titleEnglish": "Featured Products",
+              "url": "https://example.com",
+              "description": "Laborum fugiat pariatur magna enim veniam incididunt enim labore nostrud elit"
+            },
+            {
+              "title": "All Products",
+              "titleEnglish": "All Products",
+              "url": "https://example.com",
+              "description": "Ullamco est ullamco exercitation do sunt sunt consequat sit aute dolore sit"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "groups": [
+            {
+              "links": [
+                {
+                  "title": "AI & Machine Learning",
+                  "titleEnglish": "AI & Machine Learning",
+                  "description": "Non amet aliqua amet nostrud occaecat ullamco sint do in minim sunt tempor",
+                  "url": "https://example.com"
+                },
+                {
+                  "title": "Analytics",
+                  "titleEnglish": "Analytics",
+                  "url": "https://example.com",
+                  "description": "Sint do ex magna id"
+                },
+                {
+                  "title": "Asset Management",
+                  "titleEnglish": "Asset Management",
+                  "url": "https://example.com",
+                  "description": "Incididunt quis cillum pariatur aliqua cillum ad in ea laborum fugiat eiusmod nulla"
+                },
+                {
+                  "title": "Business Automation",
+                  "titleEnglish": "Business Automation",
+                  "url": "https://example.com",
+                  "description": "Duis eu labore do aute minim deserunt laborum non ut eiusmod amet"
+                },
+                {
+                  "title": "Containers",
+                  "titleEnglish": "Containers",
+                  "url": "https://example.com",
+                  "description": "Aliqua nostrud commodo sit amet incididunt eiusmod eiusmod exercitation culpa"
+                },
+                {
+                  "title": "Databases",
+                  "titleEnglish": "Databases",
+                  "url": "https://example.com",
+                  "description": "Qui elit duis magna qui nisi reprehenderit nisi pariatur"
+                },
+                {
+                  "title": "DevOps",
+                  "titleEnglish": "DevOps",
+                  "url": "https://example.com",
+                  "description": "Cillum Lorem incididunt nisi eu qui consectetur cupidatat ipsum"
+
+                },
+                {
+                  "title": "IT Automation",
+                  "titleEnglish": "IT Automation",
+                  "url": "https://example.com",
+                  "description": "Irure aliquip officia ex nulla consectetur in anim laborum nisi voluptate"
+                },
+                {
+                  "title": "Middleware",
+                  "titleEnglish": "Middleware",
+                  "url": "https://example.com",
+                  "description": "Ad duis enim consectetur ipsum aliqua non sit"
+                },
+                {
+                  "title": "Network",
+                  "titleEnglish": "Network",
+                  "url": "https://example.com",
+                  "description": "Nostrud anim non veniam dolore ipsum ad"
+                },
+                {
+                  "title": "Operating Systems",
+                  "titleEnglish": "Operating Systems",
+                  "url": "https://example.com",
+                  "description": "Fugiat minim in consectetur voluptate commodo officia aute voluptate magna reprehenderit pariatur labore"
+                },
+                {
+                  "title": "Security",
+                  "titleEnglish": "Security",
+                  "url": "https://example.com",
+                  "description": "Velit labore fugiat minim ullamco"
+                },
+                {
+                  "title": "Storage",
+                  "titleEnglish": "Storage",
+                  "url": "https://example.com",
+                  "description": "Sunt et aliquip dolore eu"
+                },
+                {
+                  "title": "Servers",
+                  "titleEnglish": "Servers",
+                  "url": "https://example.com",
+                  "description": "Anim incididunt sint aliqua deserunt irure sit do amet"
+                },
+                {
+                  "title": "Supply chain",
+                  "titleEnglish": "Supply chain",
+                  "url": "https://example.com",
+                  "description": "Reprehenderit consectetur est do non et anim sit Lorem mollit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Consulting",
+    "titleEnglish": "Consulting",
+    "url": "https://example.com"
+  },
+  {
+    "title": "Support",
+    "titleEnglish": "Support",
+    "url": "",
+    "submenu": {
+      "highlights": [
+        {
+          "heading": {
+            "title": "Support",
+            "titleEnglish": "Support"
+          },
+          "links": [
+            {
+              "title": "What's new",
+              "titleEnglish": "What's new",
+              "url": "https://example.com"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "groups": [
+            {
+              "links": [
+                {
+                  "title": "Overview",
+                  "titleEnglish": "Overview",
+                  "url": "https://example.com",
+                  "description": "Exercitation eu fugiat nulla ut mollit"
+                },
+                {
+                  "title": "Community",
+                  "titleEnglish": "Community",
+                  "url": "https://example.com",
+                  "description": "Irure occaecat pariatur proident cupidatat"
+                },
+                {
+                  "title": "Developer",
+                  "titleEnglish": "Developer",
+                  "url": "https://example.com",
+                  "description": "Ullamco id consectetur sunt anim veniam sunt exercitation commodo velit laborum consectetur do"
+                },
+                {
+                  "title": "Documentation",
+                  "titleEnglish": "Documentation",
+                  "url": "https://example.com",
+                  "description": "Ad culpa tempor amet culpa deserunt mollit consectetur id eu proident aliqua excepteur ad cillum"
+                },
+                {
+                  "title": "IBM Cloud Platform",
+                  "titleEnglish": "IBM Cloud Platform",
+                  "url": "https://example.com",
+                  "description": "Et pariatur voluptate consequat nisi est nostrud consectetur irure officia velit"
+                },
+                {
+                  "title": "Implementation",
+                  "titleEnglish": "Implementation",
+                  "url": "https://example.com",
+                  "description": "Et pariatur voluptate consequat nisi est nostrud consectetur irure officia velit"
+                },
+                {
+                  "title": "Technology Lifecycle Services",
+                  "titleEnglish": "Technology Lifecycle Services",
+                  "url": "https://example.com",
+                  "description": "Et pariatur voluptate consequat nisi est nostrud consectetur irure officia velit"
+                },
+                {
+                  "title": "Training",
+                  "titleEnglish": "Training",
+                  "url": "https://example.com",
+                  "description": "Aliquip occaecat dolore ex consectetur ipsum cupidatat esse in aute commodo mollit consequat"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Think",
+    "titleEnglish": "Think",
+    "url": "https://example.com"
+  }
+]
