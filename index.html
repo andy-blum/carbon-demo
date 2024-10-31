@@ -11,34 +11,16 @@
   <link rel="stylesheet" href="main.scss">
   <script src="/components.js" type="module"></script>
   <script src="/link-to-src.js" type="module"></script>
+  <script type="module" src="/masthead.js"></script>
 
 </head>
 <body>
-  <c4d-masthead-container auth-method="cookie" has-contact="false" data-endpoint="null"></c4d-masthead-container>
+  <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
   <div class="cds--css-grid">
     <div class="cds--col-span-100 cds--css-grid-column">
       <h1>Demo Page</h1>
     </div>
   </div>
-
-  <!-- Seed Masthead Data -->
-  <script>
-    (async () => {
-      let data;
-
-      await Promise.all([
-        customElements.whenDefined('c4d-masthead-container'),
-        fetch('/masthead.json').then(r => r.json()).then(d => data = d),
-      ]);
-
-      console.log(data);
-
-
-      const mh = document.querySelector('c4d-masthead-container');
-      mh.l0Data = data;
-
-    })();
-  </script>
 
   <!-- Basic DDO from homepage -->
   <script type="text/javascript">

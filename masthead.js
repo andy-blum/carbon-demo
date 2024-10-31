@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "title": "AI",
     "titleEnglish": "AI",
@@ -341,4 +341,11 @@
     "titleEnglish": "Think",
     "url": "https://example.com"
   }
-]
+];
+
+(async () => {
+  await customElements.whenDefined('c4d-masthead-container');
+
+  const mh = document.querySelector('c4d-masthead-container')
+  mh.l0Data = data;
+})();
