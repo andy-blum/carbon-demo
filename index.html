@@ -17,7 +17,26 @@
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
   <div class="cds--css-grid">
     <div class="cds--col-span-100 cds--css-grid-column">
-      <h1>Demo Page</h1>
+      <!-- video-cta-container required for modal. only one per page. -->
+      <c4d-video-cta-container>
+
+        <!-- feature card must have href equal to media center id and cta-type of "video" -->
+        <c4d-feature-card href="0_ibuqxqbe" size="large" cta-type="video">
+          <!-- <c4d-image default-src="https://picsum.photos/1200/1200" slot="image"></c4d-image> -->
+          <c4d-card-eyebrow>Eyebrow</c4d-card-eyebrow>
+          <c4d-card-heading>Title</c4d-card-heading>
+          <c4d-card-copy>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </c4d-card-copy>
+
+          <!-- feature-card-footer should be empty. icon will be added automatically. -->
+          <c4d-feature-card-footer></c4d-feature-card-footer>
+        </c4d-feature-card>
+
+
+      </c4d-video-cta-container>
     </div>
   </div>
 
