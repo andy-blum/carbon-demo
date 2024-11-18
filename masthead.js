@@ -4,14 +4,6 @@ const data = [
     "titleEnglish": "AI",
     "url": "",
     "submenu": {
-      "highlights": [
-        {
-          "heading": {
-            "title": "AI",
-            "titleEnglish": "AI"
-          }
-        }
-      ],
       "sections": [
         {
           "groups": [
@@ -65,14 +57,6 @@ const data = [
     "titleEnglish": "Hybrid Cloud",
     "url": "",
     "submenu": {
-      "highlights": [
-        {
-          "heading": {
-            "title": "Hybrid Cloud",
-            "titleEnglish": "Hybrid Cloud"
-          }
-        }
-      ],
       "sections": [
         {
           "groups": [
@@ -128,8 +112,8 @@ const data = [
       "highlights": [
         {
           "heading": {
-            "title": "Products",
-            "titleEnglish": "Products",
+            "title": "",
+            "titleEnglish": "",
             "description": "Ut ullamco amet nostrud ipsum commodo mollit quis do in proident sint occaecat deserunt"
           },
           "links": [
@@ -261,21 +245,6 @@ const data = [
     "titleEnglish": "Support",
     "url": "",
     "submenu": {
-      "highlights": [
-        {
-          "heading": {
-            "title": "Support",
-            "titleEnglish": "Support"
-          },
-          "links": [
-            {
-              "title": "What's new",
-              "titleEnglish": "What's new",
-              "url": "https://example.com"
-            }
-          ]
-        }
-      ],
       "sections": [
         {
           "groups": [
