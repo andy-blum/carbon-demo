@@ -108,14 +108,11 @@ const data = [
   {
     "title": "Products",
     "titleEnglish": "Products",
+    // This description field is not a valid key for the masthead data and has no effect right now.
+    "description": "Ut ullamco amet nostrud ipsum commodo mollit quis do in proident sint occaecat deserunt",
     "submenu": {
       "highlights": [
         {
-          "heading": {
-            "title": "",
-            "titleEnglish": "",
-            "description": "Ut ullamco amet nostrud ipsum commodo mollit quis do in proident sint occaecat deserunt"
-          },
           "links": [
             {
               "title": "Featured Products",
