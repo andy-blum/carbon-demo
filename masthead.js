@@ -119,12 +119,6 @@ const data = [
               "titleEnglish": "Featured Products",
               "url": "https://example.com",
               "description": "Laborum fugiat pariatur magna enim veniam incididunt enim labore nostrud elit"
-            },
-            {
-              "title": "All Products",
-              "titleEnglish": "All Products",
-              "url": "https://example.com",
-              "description": "Ullamco est ullamco exercitation do sunt sunt consequat sit aute dolore sit"
             }
           ]
         }
@@ -229,7 +223,14 @@ const data = [
             }
           ]
         }
-      ]
+      ],
+      "viewAll": {
+        "title": "All Products",
+        "titleEnglish": "All Products",
+        "url": "https://example.com",
+        "description": "Ullamco est ullamco exercitation do sunt sunt consequat sit aute dolore sit"
+      }
+
     }
   },
   {
