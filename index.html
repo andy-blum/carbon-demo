@@ -9,15 +9,34 @@
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/cssgrid.css" />
   <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon/web-components/tag/latest/themes.css" />
   <link rel="stylesheet" href="main.scss">
-  <script src="/components.js" type="module"></script>
+  <script type="module" src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/table-of-contents.min.js"></script>
+  <script type="module" src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.15.1/table-of-contents.min.js"></script>
   <script src="/link-to-src.js" type="module"></script>
+  <style>
+    dds-table-of-contents,
+    c4d-table-of-contents {
+      outline: 1px solid pink;
+    }
 
+    h2, p {
+      outline: 1px solid springgreen;
+    }
+  </style>
 </head>
 <body>
   <c4d-masthead-container auth-method="cookie" has-contact="false"></c4d-masthead-container>
   <div class="cds--css-grid">
     <div class="cds--col-span-100 cds--css-grid-column">
-      <h1>Demo Page</h1>
+
+      <dds-table-of-contents>
+        <h2 name="dds">DDS Table of Contents</h2>
+        <p>Dolore proident duis ut occaecat. Ut duis reprehenderit amet sint ipsum consectetur aliqua eu eiusmod laborum consectetur. Esse esse pariatur pariatur exercitation proident ex laborum id sunt. Enim eiusmod ullamco cillum labore qui aliqua id eiusmod sit dolore ea dolor tempor. Veniam tempor aliquip sit tempor laboris consectetur elit velit anim mollit fugiat excepteur dolor reprehenderit.</p>
+      </dds-table-of-contents>
+
+      <c4d-table-of-contents>
+        <h2 name="c4d">C4D Table of Contents</h2>
+        <p>Minim incididunt in nisi officia elit duis. Ut magna eu incididunt consectetur. Mollit et dolor esse nisi reprehenderit mollit eu laborum nisi occaecat anim enim. Tempor nisi dolor minim reprehenderit aute ullamco voluptate voluptate est laboris dolor. Eu culpa esse ipsum Lorem ut laborum aliqua ex nostrud cillum cillum esse. Enim laborum eiusmod sunt adipisicing. Velit fugiat ex culpa nisi veniam commodo.</p>
+      </c4d-table-of-contents>
     </div>
   </div>
 
