@@ -13,8 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@carbon/ibmdotcom-web-components": "^2.13.0",
+    "@carbon/ibmdotcom-web-components": "^2.16.1",
     "@carbon/styles": "^1.65.0",
+    "@carbon/web-components": "^2.14.1",
     "find": "^0.3.0",
     "glob": "^11.0.0",
     "sass": "^1.77.8",
